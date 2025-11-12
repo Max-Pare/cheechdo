@@ -19,4 +19,8 @@ def main():
         print(ask_cheech())
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(e)
+        raise Exception("STOOOP!!!")
